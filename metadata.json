@@ -1,0 +1,7 @@
+{
+  "name": "Exploring Medellín: Culture, Education and Environment",
+  "description": "Academic digital portfolio exploring the culture, education, environment, economy, and healthcare of Medellín, Colombia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
