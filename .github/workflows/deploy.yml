@@ -1,0 +1,17 @@
+on: [push]
+permissions:
+ contents: read
+ pages: write
+ id-token: write
+jobs:
+ d:
+  runs-on: ubuntu-latest
+  environment: github-pages
+  steps:
+  - uses: actions/checkout@v4
+  - run: npm install && npm run build
+  - uses: actions/configure-pages@v5
+  - uses: actions/upload-pages-artifact@v4
+    with:
+     path: dist
+  - uses: actions/deploy-pages@v4
